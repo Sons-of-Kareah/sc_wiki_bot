@@ -14,11 +14,11 @@ const formatCrew = (data) => {
   let crewString = '';
 
   if (data.crew_min !== 0) {
-    crewString = `${data.crew_min} - `;
+    crewString = `${data.crew_min}`;
   }
 
   if (data.crew_max !== 0) {
-    crewString = `${crewString}${data.crew_max}`;
+    crewString = ` - ${crewString}${data.crew_max}`;
   }
 
   return crewString.toString();
